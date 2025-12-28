@@ -1,0 +1,11 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f1e5ac 100%);
+}

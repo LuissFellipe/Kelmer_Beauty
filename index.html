@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profissional - Cabeleireira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-widest uppercase">Studio Hair</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-tighter">
+                <a href="#inicio" class="hover:text-amber-600 transition">Início</a>
+                <a href="#servicos" class="hover:text-amber-600 transition">Serviços</a>
+                <a href="#portfolio" class="hover:text-amber-600 transition">Resultados</a>
+                <a href="#contato" class="px-4 py-2 bg-stone-900 text-white rounded-full hover:bg-stone-700 transition">Agendar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Apresentação -->
+    <section id="inicio" class="pt-32 pb-20 px-4 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-full h-full border-2 border-amber-200 rounded-2xl"></div>
+                    <img src="imgs/perfil.png" 
+                        alt="Foto da Amanda Kelmer" 
+                        class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
+                        data-fallback="https://via.placeholder.com/800x1000?text=Sua+Foto+Aqui">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 space-y-6">
+                <span class="text-amber-600 font-semibold tracking-widest uppercase text-sm italic">Especialista em Beleza</span>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">Olá, eu sou Amanda Kelmer</h1>
+                <p class="text-lg text-stone-600 leading-relaxed">
+                    Com mais de 10 anos de experiência no mercado de beleza, transformo autoestima através do cuidado capilar. Especialista em colorimetria e cortes modernos, meu objetivo é realçar a sua identidade única em cada atendimento.
+                </p>
+                <div class="pt-4 flex gap-4">
+                    <a href="#contato" class="inline-block bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition shadow-lg">
+                        Conhecer meu Trabalho
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços e Preços -->
+    <section id="servicos" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Procedimentos e Valores</h2>
+                <div class="h-1 w-20 bg-amber-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Descrição dos Procedimentos -->
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
+                        <h3 class="text-xl font-bold mb-2">Colorimetria & Mechas</h3>
+                        <p class="text-stone-600">Técnicas avançadas de iluminação que respeitam a saúde dos fios. De morenas iluminadas ao loiro platinado.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
+                        <h3 class="text-xl font-bold mb-2">Cortes Personalizados</h3>
+                        <p class="text-stone-600">Visagismo aplicado para encontrar o corte que melhor se adapta ao seu formato de rosto e estilo de vida.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
+                        <h3 class="text-xl font-bold mb-2">Tratamentos & Hidratação</h3>
+                        <p class="text-stone-600">Cronograma capilar, reconstrução profunda e terapias para couro cabeludo.</p>
+                    </div>
+                </div>
+
+                <!-- Tabela de Preços -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="bg-stone-900 text-white py-6 px-8 text-center">
+                        <h3 class="text-2xl font-bold">Investimento</h3>
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span class="font-medium">Corte Feminino</span>
+                            <span class="text-amber-600 font-bold">R$ 80,00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span class="font-medium">Mechas / Luzes</span>
+                            <span class="text-stone-400 text-sm">A partir de</span>
+                            <span class="text-amber-600 font-bold">R$ 350,00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span class="font-medium">Progressiva</span>
+                            <span class="text-amber-600 font-bold">R$ 220,00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span class="font-medium">Hidratação Profunda</span>
+                            <span class="text-amber-600 font-bold">R$ 120,00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
+                            <span class="font-medium">Escova & Finalização</span>
+                            <span class="text-amber-600 font-bold">R$ 60,00</span>
+                        </div>
+                        <p class="text-xs text-stone-400 text-center mt-6">* Valores sujeitos a alteração dependendo do comprimento do cabelo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfolio (Clientes Antigos) -->
+    <section id="portfolio" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Transformações</h2>
+            <p class="text-stone-600">Confira alguns dos resultados realizados em nosso Studio.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Galeria Item 1 -->
+            <div class="group relative overflow-hidden rounded-xl h-80 shadow-md">
+                <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=600" 
+                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Resultado Cabelo">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white font-medium">Loiro Perolado</span>
+                </div>
+            </div>
+            <!-- Galeria Item 2 -->
+            <div class="group relative overflow-hidden rounded-xl h-80 shadow-md">
+                <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&q=80&w=600" 
+                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Resultado Cabelo">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white font-medium">Corte Bob Moderno</span>
+                </div>
+            </div>
+            <!-- Galeria Item 3 -->
+            <div class="group relative overflow-hidden rounded-xl h-80 shadow-md">
+                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=600" 
+                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Resultado Cabelo">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white font-medium">Morena Iluminada</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contato" class="bg-stone-900 text-stone-300 py-16 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-white text-2xl font-bold mb-6">Studio [Nome]</h3>
+                <p class="mb-4">Especialista em realçar a sua beleza natural.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white text-xl font-bold mb-6">Localização</h3>
+                <p>Rua Exemplo de Beleza, 123</p>
+                <p>Bairro Charmoso - Sua Cidade, UF</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl font-bold mb-6">Agendamentos</h3>
+                <p class="mb-4">Segunda a Sábado: 09h às 19h</p>
+                <a href="https://wa.me/553291851565" target="_blank" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-500 transition">
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-stone-800 mt-12 pt-8 text-sm text-center">
+            <p>&copy; 2024 Studio Hair. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
