@@ -67,51 +67,293 @@
                 <div class="h-1 w-20 bg-amber-500 mx-auto"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-12 items-start">
-                <!-- Descrição dos Procedimentos -->
-                <div class="space-y-8">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
-                        <h3 class="text-xl font-bold mb-2">Colorimetria & Mechas</h3>
-                        <p class="text-stone-600">Técnicas avançadas de iluminação que respeitam a saúde dos fios. De morenas iluminadas ao loiro platinado.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
-                        <h3 class="text-xl font-bold mb-2">Cortes Personalizados</h3>
-                        <p class="text-stone-600">Visagismo aplicado para encontrar o corte que melhor se adapta ao seu formato de rosto e estilo de vida.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-amber-500">
-                        <h3 class="text-xl font-bold mb-2">Tratamentos & Hidratação</h3>
-                        <p class="text-stone-600">Cronograma capilar, reconstrução profunda e terapias para couro cabeludo.</p>
-                    </div>
-                </div>
-
-                <!-- Tabela de Preços -->
+            <div class="grid md:grid-cols-1 gap-12 items-start">
+                <!-- Tabela de Preços (Refatorada para melhor visualização) -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
                     <div class="bg-stone-900 text-white py-6 px-8 text-center">
                         <h3 class="text-2xl font-bold">Investimento</h3>
+                        <p class="text-xs opacity-80 mt-1">Valores sujeitos à avaliação e variações de comprimento.</p>
                     </div>
-                    <div class="p-8 space-y-4">
-                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
-                            <span class="font-medium">Corte Feminino</span>
-                            <span class="text-amber-600 font-bold">R$ 80,00</span>
+
+                    <div class="p-8 space-y-8">
+                        <!-- Categoria: Cabelo -->
+                        <div>
+                            <h4 class="text-2xl font-bold mb-6 text-stone-800">Cabelo</h4>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                
+                                <!-- Card: Corte -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Corte</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Tesoura — apenas corte</span>
+                                            <span class="font-bold text-amber-700">R$ 40,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Tesoura + escova</span>
+                                            <span class="font-bold text-amber-700">R$ 60,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Coloração -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Coloração</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Aplicação</span>
+                                            <span class="font-bold text-amber-700">R$ 30,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Aplicação + Escova</span>
+                                            <span class="font-bold text-amber-700">R$ 60,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Escova (avulsa) -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Escova (avulsa)</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Pequeno</span>
+                                            <span class="font-bold text-amber-700">R$ 110,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Médio</span>
+                                            <span class="font-bold text-amber-700">R$ 150,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Grande</span>
+                                            <span class="font-bold text-amber-700">R$ 190,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Extra grande</span>
+                                            <span class="font-bold text-amber-700">R$ 230,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Hidratação / Reconstrução / Cauterização -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Hidratação / Reconstrução / Cauterização</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Pequeno (c/ escova)</span>
+                                            <span class="font-bold text-amber-700">R$ 50,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Médio (c/ escova)</span>
+                                            <span class="font-bold text-amber-700">R$ 55,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Grande (c/ escova)</span>
+                                            <span class="font-bold text-amber-700">R$ 60,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Extra grande (c/ escova)</span>
+                                            <span class="font-bold text-amber-700">R$ 70,00+</span>
+                                        </div>
+                                        <div class="flex justify-between items-center border-t border-stone-300 pt-2 mt-2">
+                                            <span class="text-stone-700">Somente hidratação</span>
+                                            <span class="font-bold text-amber-700">R$ 30,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Botox Capilar -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Botox Capilar</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Pequeno</span>
+                                            <span class="font-bold text-amber-700">R$ 120,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Médio</span>
+                                            <span class="font-bold text-amber-700">R$ 140,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Grande</span>
+                                            <span class="font-bold text-amber-700">R$ 160,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Extra grande</span>
+                                            <span class="font-bold text-amber-700">R$ 180,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Progressiva -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Progressiva</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Pequeno</span>
+                                            <span class="font-bold text-amber-700">R$ 130,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Médio</span>
+                                            <span class="font-bold text-amber-700">R$ 150,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Grande</span>
+                                            <span class="font-bold text-amber-700">R$ 170,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Extra grande</span>
+                                            <span class="font-bold text-amber-700">R$ 200,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Descoloração -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Descoloração</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Pequeno</span>
+                                            <span class="font-bold text-amber-700">R$ 180,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Médio</span>
+                                            <span class="font-bold text-amber-700">R$ 220,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Grande</span>
+                                            <span class="font-bold text-amber-700">R$ 240,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Extra grande</span>
+                                            <span class="font-bold text-amber-700">R$ 260,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="text-xs text-stone-500 mt-4 italic">* Modelada com grampos: acréscimo de R$ 10,00</p>
                         </div>
-                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
-                            <span class="font-medium">Mechas / Luzes</span>
-                            <span class="text-stone-400 text-sm">A partir de</span>
-                            <span class="text-amber-600 font-bold">R$ 350,00</span>
+
+                        <!-- Categoria: Estética -->
+                        <div>
+                            <h4 class="text-2xl font-bold mb-6 text-stone-800">Estética</h4>
+                            <div class="grid md:grid-cols-2 gap-6">
+
+                                <!-- Card: Sobrancelha -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Sobrancelha</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Designer</span>
+                                            <span class="font-bold text-amber-700">R$ 25,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Designer + Henna</span>
+                                            <span class="font-bold text-amber-700">R$ 35,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Somente Henna</span>
+                                            <span class="font-bold text-amber-700">R$ 20,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Alongamento de Cílios -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Alongamento de Cílios</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="text-stone-800 font-semibold mb-1 text-xs">Volume Brasileiro / Efeito Fox</div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700 pl-2">Colocação</span>
+                                            <span class="font-bold text-amber-700">R$ 70,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700 pl-2">Manutenção (20 a 30 dias)</span>
+                                            <span class="font-bold text-amber-700">R$ 50,00</span>
+                                        </div>
+                                        <div class="text-stone-800 font-semibold mt-3 mb-1 text-xs">Volume Egípcio / Efeito Anime</div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700 pl-2">Colocação</span>
+                                            <span class="font-bold text-amber-700">R$ 80,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700 pl-2">Manutenção (20 a 30 dias)</span>
+                                            <span class="font-bold text-amber-700">R$ 60,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center border-t border-stone-300 pt-2 mt-2">
+                                            <span class="text-stone-700">Remoção</span>
+                                            <span class="font-bold text-amber-700">R$ 25,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Maquiagem -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Maquiagem</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Simples</span>
+                                            <span class="font-bold text-amber-700">R$ 80,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Premium</span>
+                                            <span class="font-bold text-amber-700">R$ 100,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Limpeza de Pele -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Limpeza de Pele</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Procedimento</span>
+                                            <span class="font-bold text-amber-700">R$ 60,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Massagem Relaxante -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Massagem Relaxante</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">50 minutos</span>
+                                            <span class="font-bold text-amber-700">R$ 60,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Depilação -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Depilação</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Buço</span>
+                                            <span class="font-bold text-amber-700">R$ 10,00</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Axila</span>
+                                            <span class="font-bold text-amber-700">R$ 20,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card: Penteado -->
+                                <div class="bg-stone-50 rounded-xl border border-stone-200 p-5 hover:shadow-md transition">
+                                    <h5 class="font-bold text-lg mb-3 text-stone-900">Penteado</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-stone-700">Serviço</span>
+                                            <span class="font-bold text-amber-700">R$ 45,00+</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
-                            <span class="font-medium">Progressiva</span>
-                            <span class="text-amber-600 font-bold">R$ 220,00</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
-                            <span class="font-medium">Hidratação Profunda</span>
-                            <span class="text-amber-600 font-bold">R$ 120,00</span>
-                        </div>
-                        <div class="flex justify-between items-center border-b border-stone-100 pb-2">
-                            <span class="font-medium">Escova & Finalização</span>
-                            <span class="text-amber-600 font-bold">R$ 60,00</span>
-                        </div>
-                        <p class="text-xs text-stone-400 text-center mt-6">* Valores sujeitos a alteração dependendo do comprimento do cabelo.</p>
+
+                        <div class="text-xs text-stone-500 text-center border-t border-stone-200 pt-6">* Valores podem variar conforme avaliação, comprimento e tempo de manutenção.</div>
                     </div>
                 </div>
             </div>
