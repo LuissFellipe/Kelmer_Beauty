@@ -9,3 +9,14 @@ h1, h2, h3 {
 .bg-gold-gradient {
     background: linear-gradient(135deg, #d4af37 0%, #f1e5ac 100%);
 }
+
+
+.profile-photo {
+    object-position: 50% 18%;
+}
+
+@media (max-width: 768px) {
+    .profile-photo {
+        object-position: 50% 16%;
+    }
+}

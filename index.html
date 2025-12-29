@@ -32,7 +32,7 @@
                     <div class="absolute -top-4 -left-4 w-full h-full border-2 border-amber-200 rounded-2xl"></div>
                     <img src="imgs/perfil.png" 
                         alt="Foto da Amanda Kelmer" 
-                        class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]"
+                        class="relative rounded-2xl shadow-xl w-full object-cover h-[520px] md:h-[560px] profile-photo"
                         data-fallback="https://via.placeholder.com/800x1000?text=Sua+Foto+Aqui">
                 </div>
             </div>
@@ -42,10 +42,18 @@
                 <p class="text-lg text-stone-600 leading-relaxed">
                     Com mais de 10 anos de experiência no mercado de beleza, transformo autoestima através do cuidado capilar. Especialista em colorimetria e cortes modernos, meu objetivo é realçar a sua identidade única em cada atendimento.
                 </p>
-                <div class="pt-4 flex gap-4">
-                    <a href="#contato" class="inline-block bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition shadow-lg">
+                <div class="pt-4 flex flex-col gap-4">
+                    <a href="#contato" class="inline-block bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition shadow-lg text-center">
                         Conhecer meu Trabalho
                     </a>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/amandakelmer?igsh=MWUwYmtrM3hveXQ4NA==" target="_blank" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full hover:from-pink-600 hover:to-purple-700 transition shadow-lg font-semibold">
+                            Seguir no Instagram
+                        </a>
+                        <a href="https://wa.me/553291851565" target="_blank" class="inline-block bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-500 transition shadow-lg font-semibold">
+                            Chamar no WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,12 +156,11 @@
     <!-- Footer / Contato -->
     <footer id="contato" class="bg-stone-900 text-stone-300 py-16 px-4">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
-            <div>
-                <h3 class="text-white text-2xl font-bold mb-6">Studio [Nome]</h3>
+            <div> 
+                <h3 class="text-white text-2xl font-bold mb-6">Studio </h3>
                 <p class="mb-4">Especialista em realçar a sua beleza natural.</p>
                 <div class="flex space-x-4">
                     <a href="#" class="hover:text-white transition">Instagram</a>
-                    <a href="#" class="hover:text-white transition">Facebook</a>
                 </div>
             </div>
             <div>
@@ -163,7 +170,7 @@
             </div>
             <div>
                 <h3 class="text-white text-xl font-bold mb-6">Agendamentos</h3>
-                <p class="mb-4">Segunda a Sábado: 09h às 19h</p>
+                <p class="mb-4">Segunda a Sábado: 08h às 19h</p>
                 <a href="https://wa.me/553291851565" target="_blank" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-500 transition">
                     Chamar no WhatsApp
                 </a>
