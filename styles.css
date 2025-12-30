@@ -24,14 +24,22 @@ h1, h2, h3 {
 /* Carrossel Styles */
 .carousel-wrapper {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .carousel-btn {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: none;
+    z-index: 50;
+    position: relative;
 }
 
 .carousel-btn:hover {
@@ -41,6 +49,8 @@ h1, h2, h3 {
 .carousel-container {
     position: relative;
     width: 100%;
+    flex: 1;
+    overflow: hidden;
 }
 
 .carousel-track {
@@ -50,6 +60,7 @@ h1, h2, h3 {
 
 .carousel-slide {
     flex: 0 0 100%;
+    min-width: 0;
 }
 
 /* Indicadores */
@@ -60,6 +71,8 @@ h1, h2, h3 {
     background-color: #d4d4d8;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: none;
+    padding: 0;
 }
 
 .carousel-indicator.active {
@@ -68,18 +81,46 @@ h1, h2, h3 {
     border-radius: 6px;
 }
 
-@media (max-width: 768px) {
-    .carousel-btn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .carousel-container {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
+/* Responsividade para Tablet */
+@media (max-width: 1024px) {
     .carousel-wrapper {
-        padding: 0 12px;
+        gap: 0.75rem;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        gap: 0.5rem;
+        padding: 0 8px;
+    }
+
+    .carousel-btn {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .carousel-btn svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+
+    .carousel-slide .group {
+        height: 320px;
+    }
+
+    #carousel-indicators {
+        margin-top: 24px;
     }
 }

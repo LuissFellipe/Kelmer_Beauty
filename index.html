@@ -14,7 +14,7 @@
     <!-- Navegação -->
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <span class="text-xl font-bold tracking-widest uppercase">Studio Hair</span>
+            <span class="text-xl font-bold tracking-widest uppercase">Kelmer Beauty</span>
             <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-tighter">
                 <a href="#inicio" class="hover:text-amber-600 transition">Início</a>
                 <a href="#servicos" class="hover:text-amber-600 transition">Serviços</a>
@@ -261,15 +261,25 @@
         <!-- Carrossel Container -->
         <div class="carousel-wrapper relative">
             <!-- Botão Esquerdo -->
-            <button id="carousel-prev" class="carousel-btn carousel-btn-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-30 bg-stone-900/70 hover:bg-stone-900 text-white p-2 rounded-full transition">
+            <button id="carousel-prev" class="carousel-btn carousel-btn-prev bg-stone-900/70 hover:bg-stone-900 text-white rounded-full transition active:scale-95" aria-label="Slide anterior" type="button">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
             </button>
 
             <!-- Carrossel de Imagens -->
-            <div class="carousel-container overflow-hidden rounded-xl mx-12">
+            <div class="carousel-container rounded-xl">
                 <div class="carousel-track flex transition-transform duration-500 ease-out">
+                    <!-- Cliente 1 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente1.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 1" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 1</span>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Cliente 0 -->
                     <div class="carousel-slide flex-shrink-0 w-full">
                         <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
@@ -330,11 +340,51 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Cliente 10 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente10.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 10" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 11 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente11.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 11" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 12 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente12.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 12" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ClienteMake -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/ClienteMake.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da ClienteMake" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">ClienteMake</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Botão Direito -->
-            <button id="carousel-next" class="carousel-btn carousel-btn-next absolute right-0 top-1/2 transform -translate-y-1/2 z-30 bg-stone-900/70 hover:bg-stone-900 text-white p-2 rounded-full transition">
+            <button id="carousel-next" class="carousel-btn carousel-btn-next bg-stone-900/70 hover:bg-stone-900 text-white rounded-full transition active:scale-95" aria-label="Próximo slide" type="button">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
@@ -349,7 +399,7 @@
     <footer id="contato" class="bg-stone-900 text-stone-300 py-16 px-4">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
             <div> 
-                <h3 class="text-white text-2xl font-bold mb-6">Studio </h3>
+                <h3 class="text-white text-2xl font-bold mb-6">Kelmer Beauty </h3>
                 <p class="mb-4">Especialista em realçar a sua beleza natural.</p>
                 <div class="flex space-x-4">
                     <a href="#" class="hover:text-white transition">Instagram</a>
@@ -369,7 +419,7 @@
             </div>
         </div>
         <div class="max-w-6xl mx-auto border-t border-stone-800 mt-12 pt-8 text-sm text-center">
-            <p>&copy; 2026 Studio Hair. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Kelmer Beauty. Todos os direitos reservados.</p>
         </div>
     </footer>
 
